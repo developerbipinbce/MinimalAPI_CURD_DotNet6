@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace MInimalAPI_CURD
+namespace MInimalAPI_CURD.Models
 {
     public record UserDto(string UserName, string Password);
     public record UserRequst

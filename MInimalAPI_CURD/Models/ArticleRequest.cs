@@ -1,5 +1,4 @@
-﻿using MInimalAPI_CURD;
-namespace MInimalAPI_CURD
+﻿namespace MInimalAPI_CURD.Models
 {
     public record ArticleRequest(string? Title, string? Content, DateTime? PublishedAt);
 }

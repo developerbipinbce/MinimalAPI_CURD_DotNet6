@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-namespace MInimalAPI_CURD
+
+namespace MInimalAPI_CURD.Models
 {
 
     public class ApiContext : DbContext

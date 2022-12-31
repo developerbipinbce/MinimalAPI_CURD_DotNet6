@@ -1,4 +1,6 @@
-﻿namespace MInimalAPI_CURD
+﻿using MInimalAPI_CURD.Models;
+
+namespace MInimalAPI_CURD.Services
 {
     public interface ITokenService
     {

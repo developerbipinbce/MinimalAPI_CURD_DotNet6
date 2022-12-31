@@ -1,4 +1,6 @@
-﻿namespace MInimalAPI_CURD
+﻿using MInimalAPI_CURD.Models;
+
+namespace MInimalAPI_CURD.Services
 {
     public class UserService : IUserService
     {
@@ -8,7 +10,7 @@
         };
         public UserDto GetUser(UserRequst userRequst)
         {
-            return _users.FirstOrDefault(x => string.Equals(x.UserName, userRequst.UserName) 
+            return _users.FirstOrDefault(x => string.Equals(x.UserName, userRequst.UserName)
             && string.Equals(x.Password, userRequst.Password));
         }
     }

@@ -1,9 +1,10 @@
 ﻿using Microsoft.IdentityModel.Tokens;
+using MInimalAPI_CURD.Models;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace MInimalAPI_CURD
+namespace MInimalAPI_CURD.Services
 {
     public class TokenService : ITokenService
     {
@@ -23,11 +24,12 @@ namespace MInimalAPI_CURD
                 var tokenDescriptor = new JwtSecurityToken(issuer, audience, claims,
                 expires: DateTime.Now.Add(ExpiryDuration), signingCredentials: credentials);
                 return new JwtSecurityTokenHandler().WriteToken(tokenDescriptor);
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 return "";
             }
-            
+
         }
     }
 }

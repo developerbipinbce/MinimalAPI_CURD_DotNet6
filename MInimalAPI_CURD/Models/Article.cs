@@ -1,4 +1,4 @@
-﻿namespace MInimalAPI_CURD
+﻿namespace MInimalAPI_CURD.Models
 {
     public class Article
     {

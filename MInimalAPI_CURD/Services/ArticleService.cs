@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using MInimalAPI_CURD.Models;
 
-namespace MInimalAPI_CURD
+namespace MInimalAPI_CURD.Services
 {
     public class ArticleService : IArticleService
     {

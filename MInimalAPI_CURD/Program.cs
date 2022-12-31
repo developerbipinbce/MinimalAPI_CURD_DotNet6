@@ -5,7 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using MInimalAPI_CURD;
+using MInimalAPI_CURD.Models;
+using MInimalAPI_CURD.Services;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
